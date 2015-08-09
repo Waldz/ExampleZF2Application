@@ -1,0 +1,29 @@
+{
+    "name": "rabbitize/example-zf2-application",
+    "description": "Example ZF2 Web Application",
+    "license": "BSD-3-Clause",
+    "keywords": [
+        "framework",
+        "zf2",
+        "doctrine",
+        "skeleton"
+    ],
+    "homepage": "http://framework.zend.com/",
+    "require": {
+        "php": ">=5.5",
+        "zendframework/zendframework": "2.5.*",
+        "doctrine/doctrine-module": "0.9.*",
+        "doctrine/doctrine-orm-module": "0.9.*"
+    },
+    "require-dev": {
+        "zendframework/zftool": "dev-master",
+        "zendframework/zend-developer-tools": "dev-master",
+        "phpunit/phpunit": "*"
+    },
+    "autoload": {
+        "classmap": [
+            "vendor/",
+            "module/"
+        ]
+    }
+}
