@@ -1,6 +1,6 @@
 {
     "name": "rabbitize/example-zf2-application",
-    "description": "Example ZF2 Web Application",
+    "description": "Example ZF2 Web Application skeleton",
     "license": "BSD-3-Clause",
     "keywords": [
         "framework",
