@@ -1,0 +1,14 @@
+#!/usr/bin/env php
+<?php
+
+use Application\Console\Command\HelloCommand;
+use Symfony\Component\Console\Application as ConsoleApplication;
+
+chdir(dirname(__DIR__));
+
+require('init_autoloader.php');
+$application = require('init_application.php');
+
+$consoleApp = new ConsoleApplication('Crontab');
+$consoleApp->add(new HelloCommand($application));
+$consoleApp->run();

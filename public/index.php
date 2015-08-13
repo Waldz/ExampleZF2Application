@@ -5,14 +5,9 @@
  */
 chdir(dirname(__DIR__));
 
-// Define application environment (production|staging|testing|development)
-defined('APPLICATION_ENV') ||
-    define('APPLICATION_ENV', ((getenv('APP_ENV')) ? getenv('APP_ENV') : 'development'));
-
 define('REQUEST_MICROTIME', microtime(true));
 
-// Setup autoloading
-require 'vendor/autoload.php';
+require('init_autoloader.php');
 
-// Run the application!
-Zend\Mvc\Application::init(require 'config/application.config.php')->run();
+$application = require('init_application.php');
+$application->run();
